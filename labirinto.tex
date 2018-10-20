@@ -1,0 +1,106 @@
+\documentclass[c]{beamer}
+
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{url,color, colortbl} 
+\usepackage{subfigure}  
+\usepackage{makeidx} 
+\usepackage{subfloat}
+\usepackage{float}
+\usepackage{listings}    
+\usepackage{wrapfig}  
+\usepackage{verbatim}  
+\usepackage{caption}  
+\usepackage{algorithm,algorithmic}
+\usepackage[round]{natbib}
+\usepackage{beamerthemesplit}
+\usepackage{xcolor}  
+\usepackage{multirow}
+
+\definecolor{cl-programado}{rgb}{1,0.6,0}
+\definecolor{cl-realizado}{rgb}{0,0.7,0.32}
+\definecolor{cl-atrasado}{rgb}{0.75,0,0}
+\definecolor{cl-cabecalho}{rgb}{0.3,0.5,0.75}
+\definecolor{cl-impar}{rgb}{0.81, 0.85, 0.91}
+\definecolor{cl-par}{rgb}{0.91, 0.93, 0.87} 
+
+%-----   Themes ------%
+\usetheme{Madrid}
+\definecolor{cor}{rgb}{0.0,0.0,0.5}  
+\setbeamercolor{structure}{fg=cor}
+\linespread{1} 
+\beamertemplatenavigationsymbolsempty
+
+\title{LabiRInTO}
+
+\author[Laboratório de Robótica]{Laboratório de Robótica e Inteligência Artificial do IFTO
+\\\footnotesize{labirinto.paraiso@ifto.edu.br}}
+\institute[IFTO]{
+	\inst{}%
+		Instituto Federal do Tocantins - Campus Paraí­so do Tocantins
+}
+
+%logo Primeiro Slide
+\titlegraphic{\center\includegraphics[height=2.4cm]{logos.jpg}}
+
+%logo dos Slide
+\logo{\includegraphics[scale=0.11]{logo.png}}
+
+% Formatar data{
+\newcommand{\MONTH}{%
+	\ifcase\the\month
+	\or Janeiro% 1
+	\or Fevereiro% 2
+	\or Março% 3
+	\or Abril% 4
+	\or Maio% 5
+	\or Junho% 6
+	\or Julho% 7
+	\or Agosto% 8
+	\or Setembro% 9
+	\or Outubro% 10
+	\or Novembro% 11
+	\or Dezembro% 12
+	\fi}
+\makeatletter
+\newcommand{\YEAR}{\@Roman{\the\year}}
+\makeatother
+\date{\MONTH, \the\year}
+%} Formatar data
+ 
+
+\begin{document}
+	
+	%plain -> retira o rodapé
+	%noframenumbering -> não conta a numeração da página
+	
+	\begin{frame}[plain,noframenumbering] 
+		\titlepage
+\setbeamertemplate{footline}[frame number]{}
+	\end{frame}
+	
+	\begin{frame} 
+		\frametitle{Sumário}  
+		\tableofcontents
+	\end{frame}
+	
+
+	\section{Conteúdo 01} % Indicação do Sumário
+	\begin{frame}{Titilo do Conteúdo 01}
+	\begin{itemize}
+		\item \Large{Item 01}
+		\item \Large{Item 02}
+	\end{itemize}
+	\end{frame}
+	
+	\section{Conteúdo 02}
+	\begin{frame}{Titilo do Conteúdo 02}
+		\begin{itemize}
+			\item \Large{Item 03}
+			\item \Large{Item 04}
+		\end{itemize}
+	\end{frame}
+
+\end{document}
